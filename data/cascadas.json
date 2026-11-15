@@ -1,369 +1,149 @@
- {
-    "id": "C01",
-    "medicamento_inicial": "Antagonista del calcio dihidropiridínico (p. ej. amlodipino)",
-    "atc_inicial": [
-      "C08CA"
-    ],
-    "efecto_adverso": "Edema periférico (tobillos hinchados)",
-    "medicamento_cascada": "Diurético",
-    "atc_cascada": [
-      "C03"
-    ],
-    "atc_excluidos": [],
-    "fuentes": [
-      {
-        "cita": "Savage RD, Visentin JD, Bronskill SE, et al. Evaluation of a common prescribing cascade of calcium channel blockers and diuretics in older adults with hypertension. JAMA Intern Med. 2020;180(5):643-651.",
-        "pmid": "32091538",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/32091538/"
-      },
-      {
-        "cita": "McCarthy LM, Savage R, Dalton K, et al. ThinkCascades: a tool for identifying clinically important prescribing cascades affecting older people. Drugs Aging. 2022;39:829-840.",
-        "pmid": "36107399",
-        "doi": "10.1007/s40266-022-00964-9",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/36107399/"
-      }
-    ],
-    "pregunta_medico": "¿El diurético se añadió por edema de tobillos tras empezar el antagonista del calcio? ¿Se ha revisado esta relación?",
-    "verificado": true
+{
+  "sources": {
+    "avorn1995": "Avorn J, Bohn RL, Mogun H, et al. Neuroleptic drug exposure and treatment of parkinsonism in the elderly: a case-control study. Am J Med. 1995;99(1):48-54. PMID 7598142",
+    "gill2005": "Gill SS, Mamdani M, Naglie G, et al. A prescribing cascade involving cholinesterase inhibitors and anticholinergic drugs. Arch Intern Med. 2005;165(7):808-813. PMID 15824303",
+    "gurwitz1994": "Gurwitz JH, et al. Initiation of antihypertensive treatment during nonsteroidal anti-inflammatory drug therapy. JAMA. 1994;272(10):781-786. PMID 8078142",
+    "gurwitz1997": "Gurwitz JH, et al. Thiazide diuretics and the initiation of anti-gout therapy. J Clin Epidemiol. 1997;50(8):953-959. PMID 9291881",
+    "savage2020": "Savage RD, Visentin JD, Bronskill SE, et al. Evaluation of a common prescribing cascade of calcium channel blockers and diuretics in older adults with hypertension. JAMA Intern Med. 2020;180(5):643-651. PMID 32091538",
+    "thinkcascades": "McCarthy LM, Savage R, Dalton K, et al. ThinkCascades: a tool for identifying clinically important prescribing cascades affecting older people. Drugs Aging. 2022;39:829-840. doi:10.1007/s40266-022-00964-9",
+    "vegter2010": "Vegter S, de Jong-van den Berg LT. Misdiagnosis and mistreatment of a common side-effect: angiotensin-converting enzyme inhibitor-induced cough. Br J Clin Pharmacol. 2010;69(2):200-203. PMID 20233184 doi:10.1111/j.1365-2125.2009.03571.x",
+    "wang2023": "Wang GH, et al. Continued potassium supplementation use following loop diuretic discontinuation in older adults: an evaluation of a prescribing cascade relic. J Am Geriatr Soc. 2023;71(2):505-515. doi:10.1111/jgs.18103"
   },
-  {
-    "id": "C02",
-    "medicamento_inicial": "Diurético tiazídico",
-    "atc_inicial": [
-      "C03A"
-    ],
-    "efecto_adverso": "Ácido úrico alto / gota",
-    "medicamento_cascada": "Antigotoso (alopurinol, colchicina...)",
-    "atc_cascada": [
-      "M04"
-    ],
-    "atc_excluidos": [],
-    "fuentes": [
-      {
-        "cita": "Gurwitz JH, et al. Thiazide diuretics and the initiation of anti-gout therapy. J Clin Epidemiol. 1997;50(8):953-959.",
-        "pmid": "9291881",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/9291881/"
-      }
-    ],
-    "pregunta_medico": "¿El tratamiento para la gota empezó después del diurético tiazídico? ¿Se ha valorado si el diurético contribuye?",
-    "verificado": true,
-    "nota": "Segun Gurwitz 1997, el riesgo solo aumenta de forma significativa con dosis de tiazida >= 25 mg/dia (equivalentes de hidroclorotiazida). La regla no mira la dosis."
-  },
-  {
-    "id": "C03",
-    "medicamento_inicial": "Diurético de asa (p. ej. furosemida)",
-    "atc_inicial": [
-      "C03C"
-    ],
-    "efecto_adverso": "Potasio bajo (hipopotasemia)",
-    "medicamento_cascada": "Suplemento de potasio",
-    "atc_cascada": [
-      "A12B"
-    ],
-    "atc_excluidos": [],
-    "fuentes": [
-      {
-        "cita": "Wang GH, et al. Continued potassium supplementation use following loop diuretic discontinuation in older adults: an evaluation of a prescribing cascade relic. J Am Geriatr Soc. 2023;71(2):505-515.",
-        "doi": "10.1111/jgs.18103",
-        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9957829"
-      }
-    ],
-    "pregunta_medico": "¿El suplemento de potasio se añadió por el diurético de asa? ¿Sigue siendo necesario con el tratamiento actual?",
-    "verificado": true,
-    "nota": "ThinkCascades (McCarthy 2022, p. 838) excluye diuretico -> hipopotasemia -> potasio de su lista final porque suele ser intencionado y apropiado. Presentar siempre como hipotesis a revisar."
-  },
-  {
-    "id": "C04",
-    "medicamento_inicial": "IECA (p. ej. enalapril)",
-    "atc_inicial": [
-      "C09A",
-      "C09B"
-    ],
-    "efecto_adverso": "Tos seca",
-    "medicamento_cascada": "Antitusivo",
-    "atc_cascada": [
-      "R05D"
-    ],
-    "atc_excluidos": [],
-    "fuentes": [
-      {
-        "cita": "Vegter S, de Jong-van den Berg LT. Misdiagnosis and mistreatment of a common side-effect: angiotensin-converting enzyme inhibitor-induced cough. Br J Clin Pharmacol. 2010;69(2):200-203.",
-        "pmid": "20233184",
-        "doi": "10.1111/j.1365-2125.2009.03571.x",
-        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2824482"
-      }
-    ],
-    "pregunta_medico": "¿La tos apareció después de empezar el IECA? ¿Se ha considerado el IECA como posible causa?",
-    "verificado": true
-  },
-  {
-    "id": "C05",
-    "medicamento_inicial": "Antipsicótico",
-    "atc_inicial": [
-      "N05A"
-    ],
-    "efecto_adverso": "Síntomas extrapiramidales (parkinsonismo)",
-    "medicamento_cascada": "Antiparkinsoniano",
-    "atc_cascada": [
-      "N04"
-    ],
-    "atc_excluidos": [
-      "N05AN01"
-    ],
-    "fuentes": [
-      {
-        "cita": "Avorn J, Bohn RL, Mogun H, et al. Neuroleptic drug exposure and treatment of parkinsonism in the elderly: a case-control study. Am J Med. 1995;99(1):48-54.",
-        "pmid": "7598142",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/7598142/"
-      },
-      {
-        "cita": "McCarthy LM, et al. ThinkCascades. Drugs Aging. 2022;39:829-840.",
-        "pmid": "36107399",
-        "doi": "10.1007/s40266-022-00964-9"
-      }
-    ],
-    "pregunta_medico": "¿El antiparkinsoniano se añadió por síntomas que aparecieron tras el antipsicótico? ¿Se ha revisado esta relación?",
-    "verificado": true
-  },
-  {
-    "id": "C06",
-    "medicamento_inicial": "Anticolinesterásico (donepezilo, rivastigmina, galantamina)",
-    "atc_inicial": [
-      "N06DA"
-    ],
-    "efecto_adverso": "Incontinencia urinaria",
-    "medicamento_cascada": "Antiespasmódico urinario",
-    "atc_cascada": [
-      "G04BD"
-    ],
-    "atc_excluidos": [],
-    "fuentes": [
-      {
-        "cita": "Gill SS, Mamdani M, Naglie G, et al. A prescribing cascade involving cholinesterase inhibitors and anticholinergic drugs. Arch Intern Med. 2005;165(7):808-813.",
-        "pmid": "15824303",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/15824303/"
-      }
-    ],
-    "pregunta_medico": "¿La incontinencia empezó después del anticolinesterásico? ¿Se ha valorado esta relación antes de añadir el antiespasmódico?",
-    "verificado": true
-  },
-  {
-    "id": "C07",
-    "medicamento_inicial": "AINE (antiinflamatorio no esteroideo)",
-    "atc_inicial": [
-      "M01A"
-    ],
-    "efecto_adverso": "Tensión arterial alta",
-    "medicamento_cascada": "Antihipertensivo",
-    "atc_cascada": [
-      "C02",
-      "C03",
-      "C07",
-      "C08",
-      "C09"
-    ],
-    "atc_excluidos": [],
-    "fuentes": [
-      {
-        "cita": "Gurwitz JH, et al. Initiation of antihypertensive treatment during nonsteroidal anti-inflammatory drug therapy. JAMA. 1994;272(10):781-786.",
-        "pmid": "8078142",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/8078142/"
-      },
-      {
-        "cita": "McCarthy LM, et al. ThinkCascades. Drugs Aging. 2022;39:829-840.",
-        "pmid": "36107399",
-        "doi": "10.1007/s40266-022-00964-9"
-      }
-    ],
-    "pregunta_medico": "¿El antihipertensivo se empezó o se aumentó durante el tratamiento con el AINE? ¿Se ha revisado esta relación?",
-    "verificado": true
-  },
-  {
-    "id": "C08",
-    "medicamento_inicial": "Diurético",
-    "atc_inicial": [
-      "C03"
-    ],
-    "efecto_adverso": "Incontinencia urinaria / urgencia",
-    "medicamento_cascada": "Medicamento para vejiga hiperactiva",
-    "atc_cascada": [
-      "G04BD"
-    ],
-    "atc_excluidos": [],
-    "fuentes": [
-      {
-        "cita": "McCarthy LM, Savage R, Dalton K, et al. ThinkCascades: a tool for identifying clinically important prescribing cascades affecting older people. Drugs Aging. 2022;39:829-840.",
-        "pmid": "36107399",
-        "doi": "10.1007/s40266-022-00964-9"
-      }
-    ],
-    "pregunta_medico": "¿Los síntomas urinarios empezaron después del diurético? ¿Se ha revisado esta relación?",
-    "verificado": true
-  },
-  {
-    "id": "C09",
-    "medicamento_inicial": "Alfabloqueante (p. ej. tamsulosina, doxazosina)",
-    "atc_inicial": [
-      "G04CA",
-      "C02CA"
-    ],
-    "efecto_adverso": "Mareo / hipotensión ortostática",
-    "medicamento_cascada": "Antivertiginoso (p. ej. betahistina)",
-    "atc_cascada": [
-      "N07CA"
-    ],
-    "atc_excluidos": [],
-    "fuentes": [
-      {
-        "cita": "McCarthy LM, Savage R, Dalton K, et al. ThinkCascades: a tool for identifying clinically important prescribing cascades affecting older people. Drugs Aging. 2022;39:829-840.",
-        "pmid": "36107399",
-        "doi": "10.1007/s40266-022-00964-9"
-      }
-    ],
-    "pregunta_medico": "¿El mareo apareció después de empezar el alfabloqueante? ¿Se ha valorado esta relación antes del antivertiginoso?",
-    "verificado": true
-  },
-  {
-    "id": "C10",
-    "medicamento_inicial": "Benzodiazepina",
-    "atc_inicial": [
-      "N05BA",
-      "N05CD"
-    ],
-    "efecto_adverso": "Deterioro cognitivo",
-    "medicamento_cascada": "Anticolinesterásico o memantina",
-    "atc_cascada": [
-      "N06DA",
-      "N06DX01"
-    ],
-    "atc_excluidos": [],
-    "fuentes": [
-      {
-        "cita": "McCarthy LM, Savage R, Dalton K, et al. ThinkCascades: a tool for identifying clinically important prescribing cascades affecting older people. Drugs Aging. 2022;39:829-840.",
-        "pmid": "36107399",
-        "doi": "10.1007/s40266-022-00964-9"
-      }
-    ],
-    "pregunta_medico": "¿El tratamiento para la memoria se empezó mientras tomaba la benzodiazepina? ¿Se ha valorado la benzodiazepina como posible causa?",
-    "verificado": true
-  },
-  {
-    "id": "C11",
-    "medicamento_inicial": "Anticolinérgico urinario (p. ej. oxibutinina, solifenacina)",
-    "atc_inicial": [
-      "G04BD"
-    ],
-    "efecto_adverso": "Deterioro cognitivo",
-    "medicamento_cascada": "Anticolinesterásico o memantina",
-    "atc_cascada": [
-      "N06DA",
-      "N06DX01"
-    ],
-    "atc_excluidos": [
-      "G04BD12"
-    ],
-    "fuentes": [
-      {
-        "cita": "McCarthy LM, Savage R, Dalton K, et al. ThinkCascades: a tool for identifying clinically important prescribing cascades affecting older people. Drugs Aging. 2022;39:829-840.",
-        "pmid": "36107399",
-        "doi": "10.1007/s40266-022-00964-9"
-      }
-    ],
-    "pregunta_medico": "¿El tratamiento para la memoria se empezó mientras tomaba el anticolinérgico urinario? ¿Se ha revisado esta relación?",
-    "verificado": true
-  },
-  {
-    "id": "C12",
-    "medicamento_inicial": "Antidepresivo ISRS o IRSN",
-    "atc_inicial": [
-      "N06AB",
-      "N06AX16",
-      "N06AX21"
-    ],
-    "efecto_adverso": "Insomnio",
-    "medicamento_cascada": "Medicamento para dormir",
-    "atc_cascada": [
-      "N05CD",
-      "N05CF",
-      "N05CH01",
-      "N05BA"
-    ],
-    "atc_excluidos": [],
-    "fuentes": [
-      {
-        "cita": "McCarthy LM, Savage R, Dalton K, et al. ThinkCascades: a tool for identifying clinically important prescribing cascades affecting older people. Drugs Aging. 2022;39:829-840.",
-        "pmid": "36107399",
-        "doi": "10.1007/s40266-022-00964-9"
-      }
-    ],
-    "pregunta_medico": "¿El insomnio empezó después del antidepresivo? ¿Se ha valorado esta relación antes del medicamento para dormir?",
-    "verificado": true
-  },
-  {
-    "id": "C13",
-    "medicamento_inicial": "Benzodiazepina",
-    "atc_inicial": [
-      "N05BA",
-      "N05CD"
-    ],
-    "efecto_adverso": "Agitación paradójica o por abstinencia",
-    "medicamento_cascada": "Antipsicótico",
-    "atc_cascada": [
-      "N05A"
-    ],
-    "atc_excluidos": [
-      "N05AN01"
-    ],
-    "fuentes": [
-      {
-        "cita": "McCarthy LM, Savage R, Dalton K, et al. ThinkCascades: a tool for identifying clinically important prescribing cascades affecting older people. Drugs Aging. 2022;39:829-840.",
-        "pmid": "36107399",
-        "doi": "10.1007/s40266-022-00964-9"
-      }
-    ],
-    "pregunta_medico": "¿El antipsicótico se añadió por agitación relacionada con la benzodiazepina? ¿Se ha revisado esta relación?",
-    "verificado": true
-  }
-[
-  {
-    "id": "C1",
-    "causa": { "nombre": "amlodipino", "cod_principio_activo": "7177" },
-    "efecto": "edema periférico",
-    "tratamiento": { "nombre": "furosemida", "cod_principio_activo": "2430" },
-    "hipotesis": "El amlodipino puede causar edema periférico, que a veces se trata con diuréticos sin abordar la causa.",
-    "caso_prueba": "E2",
-    "estado": "hipotesis_a_revisar"
-  },
-  {
-    "id": "C2",
-    "causa": { "nombre": "ibuprofeno", "cod_principio_activo": "2765" },
-    "efecto": "hemorragia digestiva",
-    "tratamiento": { "nombre": "pantoprazol", "cod_principio_activo": "9435" },
-    "hipotesis": "El ibuprofeno puede causar hemorragia digestiva, que a veces se trata con inhibidores de la bomba de protones.",
-    "estado": "hipotesis_a_revisar"
-  },
-  {
-    "id": "C3",
-    "causa": { "nombre": "ibuprofeno", "cod_principio_activo": "2765" },
-    "efecto": "hipertensión",
-    "tratamiento": { "nombre": "amlodipino", "cod_principio_activo": "7177" },
-    "hipotesis": "El ibuprofeno puede elevar la presión arterial, que a veces se trata con antihipertensivos sin revisar el antiinflamatorio.",
-    "estado": "hipotesis_a_revisar"
-  },
-  {
-    "id": "C4",
-    "causa": { "nombre": "simvastatina", "cod_principio_activo": "7502" },
-    "efecto": "miopatía",
-    "tratamiento": { "nombre": "ibuprofeno", "cod_principio_activo": "2765" },
-    "hipotesis": "Hipótesis de carácter docente: la simvastatina puede causar dolor muscular que se trata con analgésicos sin valorar la causa.",
-    "estado": "hipotesis_a_revisar"
-  },
-  {
-    "id": "C5",
-    "causa": { "nombre": "metformina", "cod_principio_activo": "4379" },
-    "efecto": "diarrea",
-    "tratamiento": { "nombre": "loperamida", "cod_principio_activo": "4564" },
-    "hipotesis": "La metformina puede causar diarrea, que a veces se trata con loperamida sin revisar el fármaco causal.",
-    "estado": "hipotesis_a_revisar"
-  }
-]
+  "cascades": [
+    {
+      "id": "C01",
+      "index_drug": "Dihydropyridine calcium channel blocker (e.g. amlodipine)",
+      "index_atc": ["C08CA"],
+      "adverse_effect": "Peripheral edema (swollen ankles)",
+      "cascade_drug": "Diuretic",
+      "cascade_atc": ["C03"],
+      "sources": ["savage2020", "thinkcascades"],
+      "question": "Was the diuretic added for ankle swelling after the calcium channel blocker was started? Has this link been reviewed?"
+    },
+    {
+      "id": "C02",
+      "index_drug": "Thiazide diuretic",
+      "index_atc": ["C03A"],
+      "adverse_effect": "High uric acid / gout",
+      "cascade_drug": "Anti-gout drug (allopurinol, colchicine...)",
+      "cascade_atc": ["M04"],
+      "sources": ["gurwitz1997"],
+      "question": "Did the gout treatment start after the thiazide diuretic? Has the diuretic been considered as a contributing cause?",
+      "note": "According to Gurwitz 1997, the risk only rises significantly at thiazide doses of 25 mg/day or more (hydrochlorothiazide equivalents). The rule does not check the dose."
+    },
+    {
+      "id": "C03",
+      "index_drug": "Loop diuretic (e.g. furosemide)",
+      "index_atc": ["C03C"],
+      "adverse_effect": "Low potassium (hypokalemia)",
+      "cascade_drug": "Potassium supplement",
+      "cascade_atc": ["A12B"],
+      "sources": ["wang2023"],
+      "question": "Was the potassium supplement added because of the loop diuretic? Is it still needed with the current treatment?",
+      "note": "ThinkCascades (McCarthy 2022, p. 838) left diuretic -> hypokalemia -> potassium out of its final list because it is usually intentional and appropriate. Always present it as a hypothesis to review."
+    },
+    {
+      "id": "C04",
+      "index_drug": "ACE inhibitor (e.g. enalapril)",
+      "index_atc": ["C09A", "C09B"],
+      "adverse_effect": "Dry cough",
+      "cascade_drug": "Cough suppressant",
+      "cascade_atc": ["R05D"],
+      "sources": ["vegter2010"],
+      "question": "Did the cough start after the ACE inhibitor was started? Has the ACE inhibitor been considered as a possible cause?"
+    },
+    {
+      "id": "C05",
+      "index_drug": "Antipsychotic",
+      "index_atc": ["N05A"],
+      "adverse_effect": "Extrapyramidal symptoms (parkinsonism)",
+      "cascade_drug": "Antiparkinsonian drug",
+      "cascade_atc": ["N04"],
+      "exclude_atc": ["N05AN01"],
+      "sources": ["avorn1995", "thinkcascades"],
+      "question": "Was the antiparkinsonian drug added for symptoms that appeared after the antipsychotic? Has this link been reviewed?"
+    },
+    {
+      "id": "C06",
+      "index_drug": "Cholinesterase inhibitor (donepezil, rivastigmine, galantamine)",
+      "index_atc": ["N06DA"],
+      "adverse_effect": "Urinary incontinence",
+      "cascade_drug": "Urinary antispasmodic",
+      "cascade_atc": ["G04BD"],
+      "sources": ["gill2005"],
+      "question": "Did the incontinence start after the cholinesterase inhibitor? Was this link considered before adding the antispasmodic?"
+    },
+    {
+      "id": "C07",
+      "index_drug": "NSAID (non-steroidal anti-inflammatory drug)",
+      "index_atc": ["M01A"],
+      "adverse_effect": "High blood pressure",
+      "cascade_drug": "Antihypertensive",
+      "cascade_atc": ["C02", "C03", "C07", "C08", "C09"],
+      "sources": ["gurwitz1994", "thinkcascades"],
+      "question": "Was the antihypertensive started or increased during NSAID treatment? Has this link been reviewed?"
+    },
+    {
+      "id": "C08",
+      "index_drug": "Diuretic",
+      "index_atc": ["C03"],
+      "adverse_effect": "Urinary incontinence / urgency",
+      "cascade_drug": "Overactive bladder medication",
+      "cascade_atc": ["G04BD"],
+      "sources": ["thinkcascades"],
+      "question": "Did the urinary symptoms start after the diuretic? Has this link been reviewed?"
+    },
+    {
+      "id": "C09",
+      "index_drug": "Alpha-1 blocker (e.g. tamsulosin, doxazosin)",
+      "index_atc": ["G04CA", "C02CA"],
+      "adverse_effect": "Dizziness / orthostatic hypotension",
+      "cascade_drug": "Anti-vertigo drug (e.g. betahistine)",
+      "cascade_atc": ["N07CA"],
+      "sources": ["thinkcascades"],
+      "question": "Did the dizziness start after the alpha-blocker was started? Was this link considered before the anti-vertigo drug?"
+    },
+    {
+      "id": "C10",
+      "index_drug": "Benzodiazepine",
+      "index_atc": ["N05BA", "N05CD"],
+      "adverse_effect": "Cognitive impairment",
+      "cascade_drug": "Cholinesterase inhibitor or memantine",
+      "cascade_atc": ["N06DA", "N06DX01"],
+      "sources": ["thinkcascades"],
+      "question": "Was the dementia medication started while taking the benzodiazepine? Has the benzodiazepine been considered as a possible cause?"
+    },
+    {
+      "id": "C11",
+      "index_drug": "Urinary anticholinergic (e.g. oxybutynin, solifenacin)",
+      "index_atc": ["G04BD"],
+      "adverse_effect": "Cognitive impairment",
+      "cascade_drug": "Cholinesterase inhibitor or memantine",
+      "cascade_atc": ["N06DA", "N06DX01"],
+      "exclude_atc": ["G04BD12"],
+      "sources": ["thinkcascades"],
+      "question": "Was the dementia medication started while taking the urinary anticholinergic? Has this link been reviewed?"
+    },
+    {
+      "id": "C12",
+      "index_drug": "SSRI or SNRI antidepressant",
+      "index_atc": ["N06AB", "N06AX16", "N06AX21"],
+      "adverse_effect": "Insomnia",
+      "cascade_drug": "Sleep medication",
+      "cascade_atc": ["N05CD", "N05CF", "N05CH01", "N05BA"],
+      "sources": ["thinkcascades"],
+      "question": "Did the insomnia start after the antidepressant? Was this link considered before the sleep medication?"
+    },
+    {
+      "id": "C13",
+      "index_drug": "Benzodiazepine",
+      "index_atc": ["N05BA", "N05CD"],
+      "adverse_effect": "Paradoxical or withdrawal agitation",
+      "cascade_drug": "Antipsychotic",
+      "cascade_atc": ["N05A"],
+      "exclude_atc": ["N05AN01"],
+      "sources": ["thinkcascades"],
+      "question": "Was the antipsychotic added for agitation related to the benzodiazepine? Has this link been reviewed?"
+    }
+  ]
+}
